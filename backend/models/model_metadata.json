@@ -1,0 +1,28 @@
+{
+    "project": "EnergyIQ",
+    "algorithm": "RandomForestRegressor",
+    "features": [
+        "region",
+        "meter",
+        "day",
+        "month",
+        "day_of_week",
+        "is_weekend",
+        "lag_1",
+        "lag_7",
+        "rolling_mean_7"
+    ],
+    "target": "t_kWh",
+    "regions": [
+        "Bareilly",
+        "Mathura"
+    ],
+    "total_records": 44022,
+    "unique_meters": 84,
+    "split_date": "2021-01-11",
+    "evaluation": {
+        "MAE_kWh": 1.6087099269036054,
+        "RMSE_kWh": 3.0527411123719683,
+        "R2": 0.8673259404698432
+    }
+}
